@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Churrasco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Calculadora de Churrasco</h1>
+        <label for="numPessoas">Número de Pessoas:</label>
+        <input type="number" id="numPessoas" min="1" value="1">
+        <div>
+            <label>Tipo de Carne:</label>
+            <input type="checkbox" id="carneBovina" value="Carne Bovina"> Carne Bovina
+            <input type="checkbox" id="carneSuina" value="Carne Suína"> Carne Suína
+            <input type="checkbox" id="paoAlho" value="Pão de Alho"> Pão de Alho
+            <input type="checkbox" id="drumet" value="Drumet"> Drumet
+            <input type="checkbox" id="coracaoGalinha" value="Coração de Galinha"> Coração de Galinha
+        </div>
+        <button onclick="calcularCarne()">Calcular</button>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
